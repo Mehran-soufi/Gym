@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favIcon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>باشگاه پرشین</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <a href="" class="logo">باشگاه پرشین</a>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li>
+                        <a href="#gallery">تصاویر</a>
+                    </li>
+                    <li>
+                        <a href="#program">دریافت برنامه</a>
+                    </li>
+                    <li>
+                        <a href="#coaches">مربیان</a>
+                    </li>
+                    <li>
+                        <a href="#about">درباره ما</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle_mood">
+                <div class="light-mood" onclick="toggleMood()">
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </div>
+            <div class="nav-phone">
+                <div class="phone">
+                    <span>021-56121314</span>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="res" onclick="res()">
+                    <span class="mobile1"></span>
+                    <span class="mobile2"></span>
+                    <span class="mobile3"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- body -->
+    <section class="hero-section">
+        <div class="hero-backdrop">
+            <div class="hero-title">
+                <div class="hero-text">
+                    <h1>باشگاه پرشین</h1>
+                    <h2>بزرگترین باشگاه غرب تهران</h2>
+                    <p>همه روزه حتی روزهای تعطیل در خدمت شما هستیم</p>
+                </div>
+                <div class="hero-icons">
+                    <i class="fa-brands fa-instagram" title="اینستاگرام"></i>
+                    <i class="fa-brands fa-youtube" title="یوتیوب"></i>
+                    <i class="fa-brands fa-telegram" title="تلگرام"></i>
+                </div>
+                <div class="down-btn">
+                    <div class="down-btn-click" onclick="btnDown()">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <secction class="possibilities">
+        <div class="possibilities-items">
+            <div class="pos-item" data-aos="fade-up">
+                <img src="images/bodyImg/pool.jpg" alt="استخر">
+                <p>دارای استخر سرپوشیده</p>
+            </div>
+            <div class="pos-item" data-aos="fade-up">
+                <img src="images/bodyImg/foosball.jpg" alt="فوتبال دستی">
+                <p>ورزش های گروهی برای اوقات فراغت</p>
+            </div>
+            <div class="pos-item" data-aos="fade-up">
+                <img src="images/bodyImg/boofe.jpg" alt="بوفه">
+                <p>بوفه ای مجهز با تازه ترین مواد غذایی</p>
+            </div>
+            <div class="pos-item" data-aos="fade-up">
+                <img src="images/bodyImg/gym.jpg" alt="باشگاه">
+                <p>فضایی کاملا مدرن و مجهز</p>
+            </div>
+        </div>
+    </secction>
+
+    <section class="packages">
+        <div class="sec-title">
+            <div class="border"></div>
+            <h2>پکیج های باشگاه</h2>
+            <div class="border"></div>
+        </div>
+        <div class="package-items">
+            <div class="package-item package1" data-aos="fade-up">
+                <div class="package-hover"></div>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <h4>فول ماهیانه</h4>
+                <p>هر ماه با تمدید این پکیج از تمامی مزایای باشگاه اعم از استخر و بخشی از بوفه به صورت کامل میتوانید
+                    استفاده نمایید.</p>
+                <span>600,000 تومان</span>
+            </div>
+            <div class="s-package-item" data-aos="fade-up">
+                <div class="s-package-hover"></div>
+                <i class="fa-solid fa-medal"></i>
+                <h4>ویژه 5 ماهه</h4>
+                <p>به مدت پنج ماه با بهترین تعرفه شما میتوانید در باشگاه پرشین ثبت نام کنید و از مزایای این پکیج فوق
+                    العاده بهره مند شوید.</p>
+                <span>2,700,000 تومان</span>
+            </div>
+            <div class="package-item package2" data-aos="fade-up">
+                <div class="package-hover"></div>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <h4>ماهیانه بدون استخر</h4>
+                <p>هر ماه با تمدید این پکیج میتوانید از دستگاه های باشگاه بدون بهره مندی از استخر و بوفه رایگان بهره مند
+                    شوید.</p>
+                <span>300,000 تومان</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="sec-title">
+            <div class="border"></div>
+            <h2>تصاویر باشگاه</h2>
+            <div class="border"></div>
+        </div>
+        <div class="gallery-row">
+            <div class="gallery-grid">
+                <figure class="gallery__item gallery__item--1" data-aos="fade-up">
+                    <img src="images/gallery/img1.jpg" class="gallery__img" alt="عکس اول">
+                </figure>
+                <figure class="gallery__item gallery__item--2" data-aos="fade-up">
+                    <img src="images/gallery/img3.jpg" class="gallery__img" alt="عکس دوم">
+                </figure>
+                <figure class="gallery__item gallery__item--3" data-aos="fade-up">
+                    <img src="images/gallery/img2.jpg" class="gallery__img" alt="عکس سوم">
+                </figure>
+                <figure class="gallery__item gallery__item--4" data-aos="fade-up">
+                    <img src="images/bodyImg/foosball.jpg" class="gallery__img" alt="عکس چهارم">
+                </figure>
+                <figure class="gallery__item gallery__item--5" data-aos="fade-up">
+                    <img src="images/bodyImg/pool.jpg" class="gallery__img" alt="عکس پنجم">
+                </figure>
+                <figure class="gallery__item gallery__item--6" data-aos="fade-up">
+                    <img src="images/gallery/img4.jpg" class="gallery__img" alt="عکس ششم">
+                </figure>
+                <figure class="gallery__item gallery__item--7" data-aos="fade-up">
+                    <img src="images/gallery/img5.jpg" class="gallery__img" alt="عکس هفتم">
+                </figure>
+                <figure class="gallery__item gallery__item--8" data-aos="fade-up">
+                    <img src="images/gallery/img6.jpg" class="gallery__img" alt="عکس هشتم">
+                </figure>
+                <figure class="gallery__item gallery__item--9" data-aos="fade-up">
+                    <img src="images/gallery/img7.jpg" class="gallery__img" alt="عکس نهم">
+                </figure>
+                <figure class="gallery__item gallery__item--10" data-aos="fade-up">
+                    <img src="images/gallery/img8.jpg" class="gallery__img" alt="عکس دهم">
+                </figure>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="program" id="program" data-aos="fade-up">
+        <div class="program-bgc">
+            <div class="program-items">
+                <div class="sec-title">
+                    <div class="border border-pr"></div>
+                    <h2>دریافت برنامه</h2>
+                    <div class="border border-pr"></div>
+                </div>
+                <div class="program-form">
+                    <div class="form1">
+                        <div class="form-title">
+                            <h2>برنامه ورزشی</h2>
+                        </div>
+                        <form onsubmit="return false;">
+                            <div class="detail">
+                                <label for="name">نام:</label>
+                                <input type="text" id="name" placeholder="نام شما...">
+                            </div>
+                            <div class="detail">
+                                <label for="age">سن:</label>
+                                <input type="text" id="age" placeholder="سن شما...">
+                            </div>
+                            <div class="detail">
+                                <label for="phone">شماره تماس:</label>
+                                <input type="tel" id="phone" placeholder="شماره تماس..">
+                            </div>
+                            <div class="detail">
+                                <label for="email">آدرس ایمیل:</label>
+                                <input type="email" id="email" placeholder="ایمیل شما...">
+                            </div>
+                            <div class="detail-cap">
+                                <label for="caption">توضیحات</label>
+                                <textarea name="caption" id="caption"></textarea>
+                            </div>
+                            <div class="form-btn">
+                                <button>دریافت برنامه</button>
+                            </div>
+                        </form>
+                        <div class="form-curtain1">
+                            <div class="form-curtain-btn">
+                                <button onclick="formShow1()">دریافت برنامه ورزشی</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form2">
+                        <div class="form-title">
+                            <h2>برنامه غذایی</h2>
+                        </div>
+                        <form onsubmit="return false;">
+                            <div class="detail">
+                                <label for="name">نام:</label>
+                                <input type="text" id="name" placeholder="نام شما...">
+                            </div>
+                            <div class="detail">
+                                <label for="age">سن:</label>
+                                <input type="text" id="age" placeholder="سن شما...">
+                            </div>
+                            <div class="detail">
+                                <label for="phone">شماره تماس:</label>
+                                <input type="tel" id="phone" placeholder="شماره تماس..">
+                            </div>
+                            <div class="detail">
+                                <label for="email">آدرس ایمیل:</label>
+                                <input type="email" id="email" placeholder="ایمیل شما...">
+                            </div>
+                            <div class="detail-cap">
+                                <label for="caption">توضیحات</label>
+                                <textarea name="caption" id="caption"></textarea>
+                            </div>
+                            <div class="form-btn">
+                                <button>دریافت برنامه</button>
+                            </div>
+                        </form>
+                        <div class="form-curtain2">
+                            <div class="form-curtain-btn">
+                                <button onclick="formShow2()">دریافت برنامه غذایی</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="coaching" id="coaches">
+        <div class="sec-title">
+            <div class="border"></div>
+            <h2>مربیان باشگاه</h2>
+            <div class="border"></div>
+        </div>
+        <div class="coach-items">
+            <div class="coach-person per-mt" data-aos="fade-up">
+                <div class="person-img">
+                    <img src="images/coachs/alisha.jpg" alt="">
+                </div>
+                <div class="person-detail">
+                    <h4>آلیسا اشمیت</h4>
+                    <ul>
+                        <li>بدنساز تیم فوتبال دورتموند</li>
+                        <li>برندهٔ ۱ مدال نقره</li>
+                        <li>برندهٔ ۱ مدال برنز</li>
+                    </ul>
+                    <div class="person-contact">
+                        <i class="fa-brands fa-instagram" title="اینستاگرام"></i>
+                        <i class="fa-brands fa-telegram" title="تلگرام"></i>
+                        <i class="fa-brands fa-whatsapp" title="واتساپ"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="coach-person" data-aos="fade-up">
+                <div class="person-img">
+                    <img src="images/coachs/chris.jpg" alt="">
+                </div>
+                <div class="person-detail">
+                    <h4>کریس بومستد </h4>
+                    <ul>
+                        <li>قهرمان ۴ دوره رشته فیزیک کلاسیک</li>
+                        <li>قهرمان مسابقات حرفه‌ای تورنتو</li>
+                        <li>قهرمان مسابقات بدن‌سازی آمریکای شمالی</li>
+                    </ul>
+                    <div class="person-contact">
+                        <i class="fa-brands fa-instagram" title="اینستاگرام"></i>
+                        <i class="fa-brands fa-telegram" title="تلگرام"></i>
+                        <i class="fa-brands fa-whatsapp" title="واتساپ"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="coach-person per-mt" data-aos="fade-up">
+                <div class="person-img">
+                    <img src="images/coachs/kayla.jpg" alt="">
+                </div>
+                <div class="person-detail">
+                    <h4>کایلا ایتسینس</h4>
+                    <ul>
+                        <li>خالق رژیم غذایی </li>
+                        <li>برنامه های حرفه ای و شخصی</li>
+                        <li>مدل تبلیغاتی شرکت اپل</li>
+                    </ul>
+                    <div class="person-contact">
+                        <i class="fa-brands fa-instagram" title="اینستاگرام"></i>
+                        <i class="fa-brands fa-telegram" title="تلگرام"></i>
+                        <i class="fa-brands fa-whatsapp" title="واتساپ"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="coach-person" data-aos="fade-up">
+                <div class="person-img">
+                    <img src="images/coachs/hadi.jpg" alt="">
+                </div>
+                <div class="person-detail">
+                    <h4>هادی چوپان</h4>
+                    <ul>
+                        <li>نخستین ایرانی مقام قهرمانی مستر المپیا</li>
+                        <li>۱۵ طلای استانی شامل فارس و تهران</li>
+                        <li>مرد سال ورزش ایران، ۱۴۰۱</li>
+                    </ul>
+                    <div class="person-contact">
+                        <i class="fa-brands fa-instagram" title="اینستاگرام"></i>
+                        <i class="fa-brands fa-telegram" title="تلگرام"></i>
+                        <i class="fa-brands fa-whatsapp" title="واتساپ"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about" data-aos="fade-up">
+        <div class="sec-title">
+            <div class="border"></div>
+            <h2>درباره ما</h2>
+            <div class="border"></div>
+        </div>
+        <div class="about-item">
+            <div class="abput-text">
+                <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                    چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                    آینده،
+                    شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                    الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و
+                    دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی
+                    دستاوردهای
+                    اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                </p>
+            </div>
+            <div class="about-contact">
+                <div class="phone-about">
+                    <h3>تلفن تماس :</h3>
+                    <p>021-56121314</p>
+                </div>
+                <div class="about-soshial">
+                    <h3>شبکه های اجتماعی :</h3>
+                    <i class="fa-brands fa-instagram" title="اینستاگرام"></i>
+                    <i class="fa-brands fa-telegram" title="تلگرام"></i>
+                    <i class="fa-brands fa-whatsapp" title="واتساپ"></i>
+                </div>
+            </div>
+            <div class="about-range">
+                <h3>آدرس باشگاه :</h3>
+                <p>
+                    <i class="fa-regular fa-map"></i>
+                    <span>استان تهران، شهر تهران</span>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="scroll-top" onclick="topFunction()">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <p>تمامی حقوق محفوظ است.</p>
+            <i class="fa-regular fa-copyright"></i>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
